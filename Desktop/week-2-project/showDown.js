@@ -1,13 +1,13 @@
 function fight() {
-  var hero = prompt('Name of your hero: ', 'hero1');
-  var monster = prompt('Name the monster: ', 'monster');
+  let hero = prompt('Name of your hero: ', 'hero1');
+  let monster = prompt('Name the monster: ', 'monster');
 
-  var heroHealth = 50;
-  var villainHealth = 50;
-  var heroDice;
-  var villainDice;
-  var result;
-  var strDisplay;
+  let heroHealth = 50;
+  let villainHealth = 50;
+  let heroDice;
+  let villainDice;
+  let result;
+  let strDisplay;
   while (heroHealth > 0 && villainHealth > 0) {
     heroDice = Math.floor(Math.random() * 20 + 1);
     villainDice = Math.floor(Math.random() * 20 + 1);
@@ -61,7 +61,7 @@ function fight() {
     alert(`${hero} killed ${monster}!`);
   }
 
-  var choice;
+  let choice;
   while (true) {
     choice = prompt('Would you like to play again?');
     if (choice == 'yes' || choice == 'no')
